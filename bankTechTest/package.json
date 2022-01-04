@@ -1,0 +1,23 @@
+{
+  "name": "week_10",
+  "version": "1.0.0",
+  "description": "This is a practice tech test built in JavaScript and tested using the Jest testing framework.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RPGrimes/bankTechTest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RPGrimes/bankTechTest/issues"
+  },
+  "homepage": "https://github.com/RPGrimes/bankTechTest#readme",
+  "dependencies": {
+    "jest": "^27.4.5"
+  }
+}
