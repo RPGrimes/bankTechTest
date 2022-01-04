@@ -1,18 +1,10 @@
 class Account{
-  constructor() {
-    this.balance = 0
+  constructor(openingBalance = 0) {
+    this.balance = openingBalance
   }
 
   showBalance() {
     return this.balance
-  }
-
-  deposit(value) {
-    this.balance += value
-  }
-
-  withdraw(value) {
-    this.balance -= value
   }
 };
 
