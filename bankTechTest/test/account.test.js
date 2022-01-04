@@ -7,25 +7,4 @@ describe("account", () => {
     expect(account.showBalance()).toBe(0);
   });
 
-  it('can complete a deposit transaction', () => {
-    const account = new Account;
-    account.newTransaction('deposit', 100);
-    expect(account.showBalance()).toBe(100);
-  });
-
-  it('can complete a withdraw transaction', () => {
-    const account = new Account;
-    account.newTransaction('deposit', 100);
-    account.newTransaction('withdraw', 10);
-    expect(account.showBalance()).toBe(90);
-  });
-
-  it('notifies the user when a transaction cannot be completed', () => {
-    const account = new Account;
-    account.newTransaction('make breakfast', 100);
-    expect(account.showBalance()).toBe("Balance is 0. Transaction unsuccessful. Please enter either 'deposit' or 'withdraw'.");
-  });
-
-  
-
 });
