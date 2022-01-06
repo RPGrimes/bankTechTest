@@ -14,7 +14,7 @@ class Account{
   newTransaction(depositOrWithdraw, value){
     let transaction = this.initializeNewTransaction(depositOrWithdraw, value);
     this.addToList(transaction);
-    this.balance = transaction.newBalance; //single responsibility principle - come back and revise this later transaction.updatedBalance() ??? <-- try this later
+    this.balance = transaction.newBalance;
   };
 
   initializeNewTransaction(depositOrWithdraw, value){
