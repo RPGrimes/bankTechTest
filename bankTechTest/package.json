@@ -1,5 +1,8 @@
 {
   "name": "week_10",
+  "jest": {
+    "collectCoverage": true
+  },
   "version": "1.0.0",
   "description": "This is a practice tech test built in JavaScript and tested using the Jest testing framework.",
   "main": "index.js",

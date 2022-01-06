@@ -3,10 +3,10 @@ class Transaction{
     this.transactionDate = new Date().toLocaleDateString('en-GB');
     this.transactionValue = value;
     this.transactionDorW = depositOrWithdraw;
-    this.newBalance = this.calculate(balance, depositOrWithdraw, value)
+    this.newBalance = this.performTransaction(balance, depositOrWithdraw, value)
   }
 
-  calculate(balance, depositOrWithdraw, value) {
+  performTransaction(balance, depositOrWithdraw, value) {
     if (depositOrWithdraw === "deposit"){
       return balance += value
     } else if (depositOrWithdraw === 'withdraw'){
@@ -14,10 +14,6 @@ class Transaction{
     } else {
       return `Balance is ${balance}. Transaction unsuccessful. Please enter either 'deposit' or 'withdraw'.`
     }
-  }
-
-  updatedBalance(){
-    return this.newBalance
   }
     
 };

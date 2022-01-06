@@ -15,6 +15,6 @@ describe("transaction", () => {
 
   it('notifies the user when a transaction cannot be completed', () => {
     const transaction = new Transaction(0, 'make breakfast', 50)
-    expect(transaction).toEqual({"newBalance": "Balance is 0. Transaction unsuccessful. Please enter either 'deposit' or 'withdraw'.", "transactionDate": "04/01/2022", "transactionDorW": "make breakfast", "transactionValue": 50});
+    expect(transaction).toEqual({"newBalance": "Balance is 0. Transaction unsuccessful. Please enter either 'deposit' or 'withdraw'.", "transactionDate": new Date().toLocaleDateString('en-GB'), "transactionDorW": "make breakfast", "transactionValue": 50});
   });
 });
