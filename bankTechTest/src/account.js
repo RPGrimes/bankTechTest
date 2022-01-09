@@ -7,10 +7,6 @@ class Account{
     this.transactionList = [];
   };
 
-  showBalance() {
-    return this.balance
-  };
-
   newTransaction(depositOrWithdraw, value){
     let transaction = this.initializeNewTransaction(depositOrWithdraw, value);
     this.addToList(transaction);
@@ -30,6 +26,12 @@ class Account{
     console.log(statement.statementHeaders());
     statement.transactionList();
   }
+
+  // additional feature that could be added where the user can view their balance without viewing a full statement - not in the specification so not included in submission
+
+  // showBalance() {
+  //   return this.balance
+  // };
 
   //   additional feature that could be added where the user can view individual transactions - not in the specification so not included in submission
 

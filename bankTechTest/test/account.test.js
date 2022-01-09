@@ -11,10 +11,6 @@ describe("account", () => {
     transactionDorW: 'deposit',
     newBalance: 100
   };
-  
-  it('has a default balance of 0', () => {
-    expect(account.showBalance()).toBe(0);
-  });
 
   it('adds a transaction to the list', () => {
     account.newTransaction(transactionOne.transactionDorW, transactionOne.transactionValue);
@@ -27,6 +23,12 @@ describe("account", () => {
     console.log(account.viewStatement());
     expect(console.log).toHaveBeenCalledWith("date || credit || debit || balance");
   });
+
+  // additional feature that could be added where the user can view their balance without viewing a full statement - not in the specification so not included in submission
+
+  // it('has a default balance of 0', () => {
+  //   expect(account.showBalance()).toBe(0);
+  // });
 
   //additional feature that could be added where the user can view individual transactions - not in the specification so not included in submission
 
